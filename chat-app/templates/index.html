@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Chatroom</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Global Styles */
+        body {
+            background-color: #121212;  /* Dark background */
+            color: #fff;  /* White text */
+            font-family: 'Roboto', sans-serif;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 0 20px;
+        }
+
+        /* Container Styling */
+        .container {
+            background-color: #1e1e1e;  /* Dark container background */
+            border-radius: 15px;
+            padding: 40px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .container:hover {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Heading */
+        h1 {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        /* Input Field */
+        input[type="text"] {
+            background-color: #333;
+            border: 1px solid #444;
+            color: #fff;
+            padding: 12px 20px;
+            width: 80%;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border-color: #4FD1C5;
+            outline: none;
+            box-shadow: 0 0 10px rgba(79, 209, 197, 0.5);
+        }
+
+        /* Button Styling */
+        button {
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #3700b3;
+        }
+
+        button:active {
+            transform: translateY(2px);
+        }
+
+        /* Footer Text */
+        .footer-text {
+            color: #aaa;
+            font-size: 0.9rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Main Container -->
+    <div class="container">
+        <h1>Enter Your Name</h1>
+        
+       <form method="POST">
+    <input type="text" name="username" placeholder="Enter your name" required autofocus>
+    <button type="submit">Join Chat</button>
+</form>
+
+
+        <p class="footer-text">By joining, you accept the terms of the chat</p>
+    </div>
+
+</body>
+
+</html>
